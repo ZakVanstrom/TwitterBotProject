@@ -27,7 +27,7 @@ except:
 # _ _ _ _ _
 
 # - - - - Send PayLoad - - - -
-def sendPayload(user=1112163454192967680, message="Good Morning Maren!!! I love you dearly and can't wait to see your ass :) \n\n Make sure to take your medicine!!"):
+def sendPayload(user=1112163454192967680, message="Good Morning Maren!!! I love us dearly and can't wait to see your ass :) \n\n Make sure to take your medicine!!"):
     api.send_direct_message(user, message)
 # - - - - - - - - - - - - - - -
 
