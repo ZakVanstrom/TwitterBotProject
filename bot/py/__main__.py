@@ -31,7 +31,7 @@ def sendPayload(user=1112163454192967680, message="Good Morning Maren!!! I love 
 
 
 
-sendPayload(message="hi there my bitch")
+sendPayload(message="hi there my bitch. this is my first real send! take your medicine, be happy, and know that you're the baddest bitch around. sincerely, your majesty, Lovey :)")
 
 
 
