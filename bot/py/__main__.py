@@ -1,9 +1,10 @@
+#!/usr/bin/python3
 
 import tweepy
 import json
 
 #Twitter Authentication  - - - -
-with open('twitter_auth.json') as json_file:
+with open('TwitterBotProject/bot/py/twitter_auth.json') as json_file:
     data = json.load(json_file)
     api_token = data["api"]
     apiSecret_token = data["apiSecret"]
