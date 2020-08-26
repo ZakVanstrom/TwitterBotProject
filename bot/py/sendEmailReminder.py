@@ -26,17 +26,19 @@ except smtplib.SMTPServerDisconnected:
 except smtplib.SMTPException as e:
     print('SMTP error occurred: ' + str(e))
 
-     _ _ _
+    _
+    _
+    _
 
-    from __future__ import print_function
-    import pickle
-    import os.path
-    from googleapiclient.discovery import build
-    from google_auth_oauthlib.flow import InstalledAppFlow
-    from google.auth.transport.requests import Request
+from __future__ import print_function
+import pickle
+import os.path
+from googleapiclient.discovery import build
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.requests import Request
 
-    # If modifying these scopes, delete the file token.pickle.
-    SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
+# If modifying these scopes, delete the file token.pickle.
+SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
 
 def main():
@@ -79,7 +81,10 @@ def main():
 if __name__ == '__main__':
     main()
 
-    _ _ _ _
+    _
+    _
+    _
+    _
 
 
     def create_message(sender, to, subject, message_text):
@@ -100,4 +105,8 @@ if __name__ == '__main__':
         message['subject'] = subject
         return {'raw': base64.urlsafe_b64encode(message.as_string())}
 
-     _ _ _ _
+
+    _
+    _
+    _
+    _

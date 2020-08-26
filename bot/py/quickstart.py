@@ -1,14 +1,13 @@
 from __future__ import print_function
 
 import base64
-import pickle
 import os.path
+import pickle
 from email.mime.text import MIMEText
 
-from googleapiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
-
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
@@ -56,5 +55,6 @@ def main():
 
 
 main()
-message = create_message("zakyre17@gmail.com", "zvanstro@asu.edu", "About that night...", "This is just an example text being sent")
+message = create_message("zakyre17@gmail.com", "zvanstro@asu.edu", "About that night...",
+                         "This is just an example text being sent")
 send_message(message)

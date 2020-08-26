@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-import tweepy
 import json
+import tweepy
 
 # - - - - Twitter Authentication  - - - -
-with open('TwitterBotProject/bot/py/twitter_auth.json') as json_file:
+with open('twitter_auth.json') as json_file:
     data = json.load(json_file)
     api_token = data["api"]
     apiSecret_token = data["apiSecret"]
@@ -22,16 +22,23 @@ try:
     print("Authentication OK")
 except:
     print("Error during authentication")
+
+
 # _ _ _ _ _
 
 # - - - - Send PayLoad - - - -
-def sendPayload(user=1112163454192967680, message="Good Morning Maren!!! I love us dearly and can't wait to see your ass :) \n\n Make sure to take your medicine!!"):
-    api.send_direct_message(user, message)
+
+# - - - - Send PayLoad - - - -
+def sendPayload(user=1112163454192967680,
+                message="Good Morning Maren!!! I love us dearly and can't wait to see your ass :) \n\n Make sure to take your medicine!!"):
+    api.send_direct_message(user, message, attachment_type=media, attachment_media_id=)
+
+
 # - - - - - - - - - - - - - - -
 
 
+def __main__():
+    sendPayload(message="hey baby this progress is pretty slow but im doing my best :) ")
 
-sendPayload(message="hi there my bitch. this is my first real send! take your medicine, be happy, and know that you're the baddest bitch around. sincerely, your majesty, Lovey :)")
 
-
-
+__main__()
